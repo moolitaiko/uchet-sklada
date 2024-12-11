@@ -15,11 +15,11 @@ class ProductSerializer(ModelSerializer):
         fields = '__all__'
 
 
-
 class UserSerializer(ModelSerializer):
     class Meta:
         model = User
         fields = ['username', 'first_name', 'last_name']
+
 
 class OwnerSerializer(ModelSerializer):
     class Meta:
